@@ -1,0 +1,46 @@
+.ck-focused {
+    border-color: #0003 !important;
+    box-shadow: none !important;
+}
+.ck-content .table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.ck-content table {
+    display: inline-block;
+    overflow: auto;
+    max-width: 100%;
+}
+
+.ck-content th,
+.ck-content td {
+    white-space: nowrap;
+}
+
+.ck-content .table table td {
+    text-align: center;
+    vertical-align: bottom;
+    padding: 10px;
+}
+
+.ck-content :is(ul, ol) 
+{
+    padding-left: 16px;
+    margin-left: 16px;
+}
+
+.document-outline-container {
+    --ck-document-outline-indent-level-1: 25px;
+    --ck-document-outline-indent-level-2: 35px;
+    --ck-document-outline-indent-level-3: 45px;
+    --ck-document-outline-indent-level-4: 55px;
+    --ck-document-outline-indent-level-5: 65px;
+    --ck-document-outline-base-font-size: 12px;
+    --ck-document-outline-item-active-color: red;
+}
+
+.ck.ck-balloon-panel{
+    display: none !important;
+}

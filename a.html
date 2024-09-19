@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tw.js"></script>
+</head>
+<body>
+
+<div id="some" class="w-full text-2xl font-bold text-center pt-5">0x0</div>
+<div class="box shadow-lg rounded w-[400px] m-auto grid grid-cols-[repeat(var(--col),minmax(0,1fr))] p-4" style="--col:20">
+        
+</div>
+
+<script>
+let timeout;
+function paintBox(row=0,col=0) {
+    clearTimeout(timeout)
+    timeout = setTimeout(() => {
+        let html = ''
+        for (let i = 1; i <= 20; i++) {
+            for (let j = 1; j <= 20; j++) {
+                html += `<div onmouseover="paintBox(${i}, ${j})" class="${(i<=row&&j<=col) ? 'bg-sky-200' : ''} h-[20px] w-[20px] rounded border border-black/30 text-center"></div>`
+            }
+        }
+        document.querySelector('.box').innerHTML = html
+    }, 50)
+}
+
+paintBox();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Appointment;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class AppontmentSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        $data = [
+            [
+                'patient_name' => 'mohsin sikder',
+                'phone' => '01715486265',
+                'age' => '22',
+                'patient_type_id' => '1',
+                'chamber_id' => '1',
+                'date' => '2024-09-07',
+                'slot_id' => '1',
+                'serial_no' => '1',
+                'tracking_code' => '1ABC',
+                'doctor_id' => '1',
+                'created_by' => '1',
+                'present' => '0',
+            ],
+            [
+                'patient_name' => 'mohsin sikder',
+                'phone' => '01715486265',
+                'age' => '22',
+                'patient_type_id' => '1',
+                'chamber_id' => '1',
+                'date' => '2024-09-07',
+                'slot_id' => '1',
+                'serial_no' => '2',
+                'tracking_code' => '9ABC',
+                'doctor_id' => '1',
+                'created_by' => '1',
+                'present' => '0',
+            ],
+            [
+                'patient_name' => 'mohsin sikder',
+                'phone' => '01715486265',
+                'age' => '22',
+                'patient_type_id' => '1',
+                'chamber_id' => '1',
+                'date' => '2024-09-07',
+                'slot_id' => '3',
+                'serial_no' => '1',
+                'tracking_code' => '7ABC',
+                'doctor_id' => '1',
+                'created_by' => '1',
+                'present' => '0',
+            ],
+            [
+                'patient_name' => 'mohsin sikder',
+                'phone' => '01715486265',
+                'age' => '22',
+                'patient_type_id' => '1',
+                'chamber_id' => '1',
+                'date' => '2024-09-07',
+                'slot_id' => '1',
+                'serial_no' => '4',
+                'tracking_code' => '4ABC',
+                'doctor_id' => '1',
+                'created_by' => '1',
+                'present' => '0',
+            ],
+            [
+                'patient_name' => 'mohsin sikder',
+                'phone' => '01715486265',
+                'age' => '22',
+                'patient_type_id' => '1',
+                'chamber_id' => '1',
+                'date' => '2024-09-07',
+                'slot_id' => '1',
+                'serial_no' => '5',
+                'tracking_code' => '5ABC',
+                'doctor_id' => '1',
+                'created_by' => '1',
+                'present' => '0',
+            ],
+            [
+                'patient_name' => 'mohsin sikder',
+                'phone' => '01715486265',
+                'age' => '22',
+                'patient_type_id' => '1',
+                'chamber_id' => '1',
+                'date' => '2024-09-07',
+                'slot_id' => '1',
+                'serial_no' => '6',
+                'tracking_code' => '2ABC',
+                'doctor_id' => '1',
+                'created_by' => '1',
+                'present' => '0',
+            ],
+            [
+                'patient_name' => 'mohsin sikder',
+                'phone' => '01715486265',
+                'age' => '22',
+                'patient_type_id' => '1',
+                'chamber_id' => '1',
+                'date' => '2024-09-07',
+                'slot_id' => '1',
+                'serial_no' => '7',
+                'tracking_code' => '10ABC',
+                'doctor_id' => '1',
+                'created_by' => '1',
+                'present' => '0',
+            ],
+            [
+                'patient_name' => 'mohsin sikder',
+                'phone' => '01715486265',
+                'age' => '22',
+                'patient_type_id' => '1',
+                'chamber_id' => '1',
+                'date' => '2024-09-07',
+                'slot_id' => '1',
+                'serial_no' => '8',
+                'tracking_code' => '16ABC',
+                'doctor_id' => '1',
+                'created_by' => '1',
+                'present' => '0',
+            ],
+            [
+                'patient_name' => 'mohsin sikder',
+                'phone' => '01715486265',
+                'age' => '22',
+                'patient_type_id' => '1',
+                'chamber_id' => '1',
+                'date' => '2024-09-07',
+                'slot_id' => '1',
+                'serial_no' => '9',
+                'tracking_code' => '11ABC',
+                'doctor_id' => '1',
+                'created_by' => '1',
+                'present' => '0',
+            ],
+            [
+                'patient_name' => 'mohsin sikder',
+                'phone' => '01715486265',
+                'age' => '22',
+                'patient_type_id' => '1',
+                'chamber_id' => '1',
+                'date' => '2024-09-07',
+                'slot_id' => '1',
+                'serial_no' => '10',
+                'tracking_code' => '12ABC',
+                'doctor_id' => '1',
+                'created_by' => '1',
+                'present' => '0',
+            ],
+        ];
+
+        Appointment::insert($data);
+    }
+}
